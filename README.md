@@ -64,8 +64,10 @@ Evaluasi model yang digunakan untuk menilai performa prediksi pada projek kali i
     - F-1 Score  = (2 * Recall * Precision) / (Recall + Precision)
 
 - Berikut adalah hasil confusion matrix setiap class:
+
     a.  Model Baseline
-        |   Class       |   TP |   FP |   FN |   TN |   Accuracy |   Precision |   Recall |   F1-Score |
+
+|   Class       |   TP |   FP |   FN |   TN |   Accuracy |   Precision |   Recall |   F1-Score |
 |:--------------:|-----:|-----:|-----:|-----:|-----------:|------------:|---------:|-----------:|
 |   apple        |   19 |    0 |    0 |  421 |      1.000 |       1.000 |    1.000 |      1.000 |
 |   banana       |   21 |    0 |    0 |  419 |      1.000 |       1.000 |    1.000 |      1.000 |
@@ -92,28 +94,32 @@ Evaluasi model yang digunakan untuk menilai performa prediksi pada projek kali i
 
 
     b.  Model Improvement
-        1.apple = TP=19, FP=0, FN=0, TN=421. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        2.banana = TP=21, FP=0, FN=0, TN = 419. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        3. blackgram = TP=26, FP=0, FN=0, TN=414. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        4. chickpea = TP=20, FP=0, FN=0, TN=420. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        5. coconut = TP=23, FP=0, FN=0, TN = 417. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        6. coffee = TP=23, FP=0, FN=1, TN=416. Acc=0.997, Precision=1.0, Recall=0.95, F1-score = 0.97
-        7. cotton = TP=19, FP=0, FN=0, TN=421. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        8. grapes = TP=20, FP=0, FN=0, TN=420. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        9. jute = TP=10, FP=5, FN=1, TN=424. Acc=0.986, Precision=0.667, Recall=0.90, F1-score = 0.76
-        10. kidneybeans = TP=23, FP=0, FN=0, TN=417. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        11. lentil = TP=21, FP=0, FN=0, TN=419. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        12. maize = TP=19, FP=0, FN=0, TN=421. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        13. mango = TP=14, FP=0, FN=0, TN = 426. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        14. mothbeans = TP=19, FP=0, FN=0, TN=421. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        15. mungbean = TP=17, FP=0, FN=0, TN=423. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        16. muskmelon = TP=23, FP=0, FN=0, TN=417. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        17. orange = TP=14, FP=0, FN=0, TN=426. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        18. papaya = TP=23, FP=1, FN=0, TN=416. Acc=0.997, Precision=0.95, Recall=1.0, F1-score = 0.97
-        19. pigeonpeas = TP=27, FP=0 FN=0, TN=413. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        20. pomegranate = TP=17, FP=0, FN=0, TN=423. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        21. rice = TP=19, FP=0, FN=4, TN=417. Acc=1.0, Precision=1.0, Recall=0.82, F1-score = 0.90
-        22. watermelon = TP=17, FP=0, FN=0, TN=423. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
+
+|   Class       |   TP |   FP |   FN |   TN |   Accuracy |   Precision |   Recall |   F1-Score |
+|:--------------:|-----:|-----:|-----:|-----:|-----------:|------------:|---------:|-----------:|
+|   apple        |   19 |    0 |    0 |  421 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   banana       |   21 |    0 |    0 |  419 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   blackgram    |   26 |    0 |    0 |  414 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   chickpea     |   20 |    0 |    0 |  420 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   coconut      |   23 |    0 |    0 |  417 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   coffee       |   23 |    0 |    1 |  416 |      0.997 |       1.000 |    0.950 |      0.970 |
+|   cotton       |   19 |    0 |    0 |  421 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   grapes       |   20 |    0 |    0 |  420 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   jute         |   10 |    5 |    1 |  424 |      0.986 |       0.667 |    0.900 |      0.760 |
+|   kidneybeans  |   23 |    0 |    0 |  417 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   lentil       |   21 |    0 |    0 |  419 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   maize        |   19 |    0 |    0 |  421 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   mango        |   14 |    0 |    0 |  426 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   mothbeans    |   19 |    0 |    0 |  421 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   mungbean     |   17 |    0 |    0 |  423 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   muskmelon    |   23 |    0 |    0 |  417 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   orange       |   14 |    0 |    0 |  426 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   papaya       |   23 |    1 |    0 |  416 |      0.997 |       0.950 |    1.000 |      0.970 |
+|   pigeonpeas   |   27 |    0 |    0 |  413 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   pomegranate  |   17 |    0 |    0 |  423 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   rice         |   19 |    0 |    4 |  417 |      1.000 |       1.000 |    0.820 |      0.900 |
+|   watermelon   |   17 |    0 |    0 |  423 |      1.000 |       1.000 |    1.000 |      1.000 |
+
         
 Berdasarkan hasil confusion matrix berdasarkan kelas diatas, model improvement memiliki hasil yang lebih baik, terlihat pada kelas blackgram, cotton, lentil, maize, mothbeans, jute, dan rice yang memiliki peningkatan pada accuracy, precision, recall dan juga f1-score. Akan tetapi terdapat satu kelas yang performanya menurun yaitu kelas coffe pada recall dan juga f1-score. Dengan hasil yang dijelaskan diatas terlihat bahwa perubahan pada tuning hyperparameter meningkatkan performa dalam suatu prediksi, maka dari itu penting untuk melakukan tuning hyperparameter pada sebuah model.
 
