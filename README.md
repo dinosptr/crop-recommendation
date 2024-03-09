@@ -65,28 +65,31 @@ Evaluasi model yang digunakan untuk menilai performa prediksi pada projek kali i
 
 - Berikut adalah hasil confusion matrix setiap class:
     a.  Model Baseline
-        1. apple = TP=19, FP=0, FN=0, TN=421. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        2.banana = TP=21, FP=0, FN=0, TN = 419. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        3. blackgram = TP=25, FP=0, FN=1, TN=414. Acc=0.997, Precision=1.0, Recall=0.96, F1-score = 0.98
-        4. chickpea = TP=20, FP=0, FN=0, TN=420. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        5. coconut = TP=23, FP=0, FN=0, TN = 417. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        6. coffee = TP=24, FP=0, FN=0, TN=416. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        7. cotton = TP=19, FP=1, FN=0, TN=420. Acc=0.997, Precision=0.95, Recall=1.0, F1-score = 0.97
-        8. grapes = TP=20, FP=0, FN=0, TN=420. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        9. jute = TP=11, FP=7, FN=0, TN=422. Acc=0.984, Precision=0.66, Recall=1.0, F1-score = 0.75
-        10. kidneybeans = TP=23, FP=0, FN=0, TN=417. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        11. lentil = TP=21, FP=1, FN=1, TN=417. Acc=0.995, Precision=0.91, Recall=1.0, F1-score = 0.95
-        12. maize = TP=18, FP=0, FN=1, TN=421. Acc=0.997, Precision=1.0, Recall=0.94, F1-score = 0.97
-        13. mango = TP=14, FP=0, FN=0, TN = 426. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        14. mothbeans = TP=18, FP=0, FN=1, TN=421. Acc=0.997, Precision=1.0, Recall=0.94, F1-score = 0.97
-        15. mungbean = TP=17, FP=0, FN=0, TN=423. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        16. muskmelon = TP=23, FP=0, FN=0, TN=417. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        17. orange = TP=14, FP=0, FN=0, TN=426. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        18. papaya = TP=20, FP=0, FN=3, TN=417. Acc=0.993, Precision=1.0, Recall=0.86, F1-score = 0.93
-        19. pigeonpeas = TP=27, FP=0 FN=0, TN=413. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        20. pomegranate = TP=17, FP=0, FN=0, TN=423. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
-        21. rice = TP=18, FP=1, FN=5, TN=416. Acc=0.986, Precision=0.94, Recall=0.78, F1-score = 0.85
-        22. watermelon = TP=17, FP=0, FN=0, TN=423. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
+        |   Class       |   TP |   FP |   FN |   TN |   Accuracy |   Precision |   Recall |   F1-Score |
+|:--------------:|-----:|-----:|-----:|-----:|-----------:|------------:|---------:|-----------:|
+|   apple        |   19 |    0 |    0 |  421 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   banana       |   21 |    0 |    0 |  419 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   blackgram    |   25 |    0 |    1 |  414 |      0.997 |       1.000 |    0.960 |      0.980 |
+|   chickpea     |   20 |    0 |    0 |  420 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   coconut      |   23 |    0 |    0 |  417 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   coffee       |   24 |    0 |    0 |  416 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   cotton       |   19 |    1 |    0 |  420 |      0.997 |       0.950 |    1.000 |      0.970 |
+|   grapes       |   20 |    0 |    0 |  420 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   jute         |   11 |    7 |    0 |  422 |      0.984 |       0.660 |    1.000 |      0.750 |
+|   kidneybeans  |   23 |    0 |    0 |  417 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   lentil       |   21 |    1 |    1 |  417 |      0.995 |       0.910 |    1.000 |      0.950 |
+|   maize        |   18 |    0 |    1 |  421 |      0.997 |       1.000 |    0.940 |      0.970 |
+|   mango        |   14 |    0 |    0 |  426 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   mothbeans    |   18 |    0 |    1 |  421 |      0.997 |       1.000 |    0.940 |      0.970 |
+|   mungbean     |   17 |    0 |    0 |  423 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   muskmelon    |   23 |    0 |    0 |  417 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   orange       |   14 |    0 |    0 |  426 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   papaya       |   20 |    0 |    3 |  417 |      0.993 |       1.000 |    0.860 |      0.930 |
+|   pigeonpeas   |   27 |    0 |    0 |  413 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   pomegranate  |   17 |    0 |    0 |  423 |      1.000 |       1.000 |    1.000 |      1.000 |
+|   rice         |   18 |    1 |    5 |  416 |      0.986 |       0.940 |    0.780 |      0.850 |
+|   watermelon   |   17 |    0 |    0 |  423 |      1.000 |       1.000 |    1.000 |      1.000 |
+
 
     b.  Model Improvement
         1.apple = TP=19, FP=0, FN=0, TN=421. Acc=1.0, Precision=1.0, Recall=1.0, F1-score = 1.0
