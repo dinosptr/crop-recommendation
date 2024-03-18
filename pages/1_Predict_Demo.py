@@ -1,7 +1,6 @@
 import pickle
 import joblib
 import streamlit as st
-import pyautogui
 
 with open('assets/labelencoder/label_encoder_bahasaIndonesia_v2.pkl', 'rb') as f:
     label_encoder = pickle.load(f)
@@ -18,8 +17,6 @@ def predict(nitrogen, fosfor, kalium, suhu, kelembapan, ph, curah_hujan):
     pred = model.predict(data)
     y_pred_label = label_encoder.inverse_transform(pred)
     return y_pred_label
-
-import streamlit as st
 
 st.set_page_config(
     page_title="Predict Demo",
@@ -72,8 +69,5 @@ if st.button(":green[Prediksi]", type='secondary'):
             label = predict(nitrogen, fosfor, kalium, suhu, kelembapan, ph, curah_hujan)
             st.write(f"Tanaman yang cocok ditanam adalah **Tanaman {label[0]}**")
             st.write("Done...!!! :smile:")
-# Tombol untuk mereset nilai input menjadi default
-if st.button("Reset", type='primary'):
-    pyautogui.hotkey("ctrl","r")
     
 
