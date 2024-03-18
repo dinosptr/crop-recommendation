@@ -74,6 +74,6 @@ if st.button(":green[Prediksi]", type='secondary'):
             st.write("Done...!!! :smile:")
 # Tombol untuk mereset nilai input menjadi default
 if st.button("Reset", type='primary'):
-    pyautogui.hotkey("ctrl","F5")
+    pyautogui.hotkey("ctrl","r")
     
 
