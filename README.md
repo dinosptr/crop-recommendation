@@ -1,4 +1,4 @@
-Link Demo: [rekomendasi=tanaman](https://crop-recommendation-ktvntfbhuyqxdhjq4spa2m.streamlit.app/)
+Link Demo: [rekomendasi-tanaman](https://crop-recommendation-ktvntfbhuyqxdhjq4spa2m.streamlit.app/)
 
 # Pertanian
 Pertanian presisi telah menghasilkan profil yang sangat tinggi dalam industri pertanian selama dekade terakhir. Meskipun demikian, lebih lanjut pengembangan teknologi diperlukan, khususnya di bidang sistem penginderaan dan pemetaan untuk menyediakan data spasial terkait pada tanaman, tanah dan faktor lingkungan. Pertanian presisi merupakan informasi yang sangat bermanfaat dan tidak dapat diwujudkan tanpa kemajuan besar dalam jaringan dan kekuatan pemrosesan komputer. Pertanian presisi, sebagai konsep pengelolaan tanaman, dapat memenuhi banyak peningkatan lingkungan, ekonomi, pasar dan tekanan publik pada pertanian yang subur[1].\
